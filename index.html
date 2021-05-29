@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Github Profile</title>
+</head>
+<body>
+    <header>
+        <div class="header-items flex">
+            <div class="header-nav nav-one flex">
+                <i class="fas fa-bars flex-item" id="bar"></i>
+                <div class="git-img flex-item">
+                    <i class="fab fa-github"></i>
+                </div>
+
+                <div class="center-nav flex">
+                    <div class="search">
+                        <input type="text" id="search-bar" placeholder="Search">
+                        <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="">
+                    </div>
+                    <ul class="center-nav-item">
+                        <li>Pull requests</li>
+                        <li>Issues</li>
+                        <li>Codespaces</li>
+                        <li>Marketplace</li>
+                        <li>Explore</li>
+                    </ul>
+
+                    <ul class="hide-display">
+                        <li>Codespaces</li>
+                        <li>Sponsors</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-nav left-nav flex">
+                
+                <div class="dropdown flex">
+                    <div id="plus">+
+                      <i class="fas fa-sort-down"></i>  
+                    </div>
+                    
+                    <div class="user-icon">
+                        <span class="small-user"></span>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="header-nav">
+                
+            </div>
+            <i class="far fa-bell flex-item" id="notification"></i><span id="alert"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-nav">
+            <div class="container">
+                <nav>
+                    <ul class="nav-item flex">
+                        <li><img src="https://image.flaticon.com/icons/png/128/899/899796.png" alt=""> Overview</li>
+                        <li id="active"><img src="https://image.flaticon.com/icons/png/128/879/879789.png" alt=""> Repositories <span></span></li>
+                        <li><img src="https://image.flaticon.com/icons/png/128/801/801987.png"> Projects</li>
+                        <li><img src="https://image.flaticon.com/icons/png/128/136/136784.png" alt=""> Packages</li>
+                    </ul>
+                </nav>
+            </div> 
+        </section>
+        <hr>
+        <section class="user-found">           
+            <div class="container flex">
+                <div class="user-details"></div>               
+                <div class="repositories">    
+                    <form class="form">
+                        <input type="text" id="username" placeholder="find repository by username..">
+                    </form> 
+                    <div class="repositories-list"></div>  
+                </div>
+            </div> 
+        </section>       
+    </main>
+    <div class="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script src="js/updatedTime.js"></script>
+    <script src="js/repo.js"></script>
+    
+</body>
+</html>
