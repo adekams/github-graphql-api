@@ -1,3 +1,3 @@
 const config = {
-    ACCESS_TOKEN : "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",
+    ACCESS_TOKEN : "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",
 } 
