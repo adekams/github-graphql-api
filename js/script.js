@@ -93,7 +93,7 @@ const getGithubData = async() => {
         
     }catch(err) {
         console.log(err)
-        repositories.innerHTML = `<h2 style="font-size: 20px;">Error: Please make sure you are connected to a working internet</h2>`
+        repositories.innerHTML = `<h2 style="font-size: 20px;">Error: Please provide a valid Access Token to continue search.</h2>`
     }   
 }
 
