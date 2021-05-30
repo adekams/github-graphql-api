@@ -14,11 +14,14 @@ const getUpdatedTime = (repo) =>  {
     let newHour = new Date().getHours()
     let dayDifference = (newDay) - dateTimeDay
     let dateTimeMonthText = month[dateTimeMonth]
-    let timeDifference = (parseInt(newHour) - parseInt(dateTimeHour))
+    let timeDifference = (newHour - dateTimeHour)
+    let minDifference = ((new Date().getMinutes()) - (dateTime.getMinutes()))
     
     if(dateTimeYear === (newDate) && dateTimeMonth === newMonth) {
-        if(dayDifference <= 0) {
+        if(dayDifference <= 0) {      
             if(timeDifference <= 0) {
+                updated = `${minDifference} minutes ago`
+            }else if(timeDifference === 1) {
                 updated = `${timeDifference} hour ago`
             }else {
                 updated = `${timeDifference} hours ago`
@@ -27,8 +30,7 @@ const getUpdatedTime = (repo) =>  {
             updated = `${dayDifference} day ago`
         }else {
             updated = `${dayDifference} days ago`
-        }
-    
+        }   
     }
     if(dateTimeYear === (newDate) && dateTimeMonth !== newMonth) {
         updated= `on ${dateTimeMonthText} ${dateTimeDay}`
