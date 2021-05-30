@@ -77,6 +77,12 @@ header .search img {
     font-size: 2rem;
 }
 
+.git-img i:hover,
+#notification:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
 #notification {
     font-size: 1.5rem;
 }
@@ -314,7 +320,7 @@ form input {
     header ul li {
         width: 100%;
         padding: 10px 5px;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid rgba(var(--white-color));
     }
 
     header .search {
