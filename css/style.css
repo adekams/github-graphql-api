@@ -264,16 +264,19 @@ form input {
     cursor: pointer;
 }
 
-
 .language-count {
+    margin: 10px 0;
+    width: fit-content;
     max-width: 60%;
 }
 
-.language-count small {
+.language-count span {
     font-size: .857rem;
+    margin-right: 10px;
+    padding: 5px 0;
 }
 
-.language-count small i {
+.language-count span i {
     color: var(--dark-color);
     cursor: pointer;
 }
@@ -296,11 +299,15 @@ form input {
     font-size: 14px;
 }
 
-.language-count {
-    margin: 10px 0;
+#repo-lang-color {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid rgba(var(--white-color));
+    border-radius: 50%;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     #bar {
         font-size: 1.6rem;
     }
