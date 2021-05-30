@@ -4,7 +4,6 @@ let repositories = document.querySelector(".repositories-list")
 let repoSpan = document.querySelector("#active span")
 let userDetails = document.querySelector(".user-details")
 
-
 const insertUserDetails = user => {
     let details = `  
         <div class="user flex">
@@ -20,8 +19,6 @@ const insertUserDetails = user => {
     `
     return details
 }
-
-
 
 const insertRepoLanguage = data => {
     let repoLanguage = data.map(repo => {
