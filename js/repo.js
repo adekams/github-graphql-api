@@ -17,7 +17,7 @@ const insertRepoData = data => {
                 <div class="language-count flex">
                     <small id="repo-starcount"><i class="far fa-star"></i> ${repo.stargazerCount}</small>
                     <small id="repo-forkcount"><i class="fas fa-code-branch"></i> ${repo.forkCount}</small>
-                    <small id="repo-updated">updated on ${updated}</small>
+                    <small id="repo-updated">updated ${updated}</small>
                 </div>
             </div>                  
         `
