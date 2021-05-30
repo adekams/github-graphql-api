@@ -184,7 +184,6 @@ li#active span {
 #user-img {
     border: 1px solid var(--light-grey);
     border-radius: 100%;
-    min-width: 120px;
     width: 20%;
     z-index: 1;
 }
@@ -223,7 +222,7 @@ form input {
 
 /*User details*/ 
 .user-details #user-name {
-    font-size: 1.5rem;
+    font-size: 1.786rem;
     color: var(--dark-color)
 } 
 
