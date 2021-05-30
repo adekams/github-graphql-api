@@ -50,7 +50,7 @@ const getGithubData = async() => {
                             bio
                             name
                             login
-                            repositories(affiliations: OWNER, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}, first: 15) {
+                            repositories(affiliations: OWNER, privacy: PUBLIC, orderBy: {field: UPDATED_AT, direction: DESC}, first: 20) {
                                 totalCount
                                 nodes {
                                     name
@@ -58,7 +58,7 @@ const getGithubData = async() => {
                                     url
                                     stargazerCount
                                     forkCount
-                                    languages(first: 15) {
+                                    languages(orderBy: {field: SIZE, direction: DESC}, first: 1) {
                                         nodes {
                                             color
                                             name
