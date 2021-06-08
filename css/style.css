@@ -1,463 +1,455 @@
 :root {
-    --blue-color: #0366d6;
-    --dark-color: #24292e;
-    --white-color: 225, 225, 225, .2;
-    --light-grey: #e1e4e8;
-    --light-text: #586069;
+  --blue-color: #0366d6;
+  --dark-color: #24292e;
+  --white-color: 225, 225, 225, 0.2;
+  --light-grey: #e1e4e8;
+  --light-text: #586069;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--light-text);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light-text);
 }
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    box-sizing: border-box;
-    line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  line-height: 1.3;
 }
 
 img {
-    width: 100%;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 section {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 header {
-    background: var(--dark-color);
-    color: #fff;
-    padding: 12px 5px;
-    width: 100%;
-    /* position: relative; */
+  background: var(--dark-color);
+  color: #fff;
+  padding: 12px 5px;
+  width: 100%;
+  /* position: relative; */
 }
 
-
-
 .flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container {
-    max-width: 1250px;
-    margin: 0 auto;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 header .container.flex .header-nav {
-    flex: auto;
+  flex: auto;
 }
 
 /* header */
 header .search {
-    margin-right: 5px;
-    position: relative;
+  margin-right: 5px;
+  position: relative;
 }
 header .search #search-bar {
-    background: transparent;
-    border: 1px solid rgba(var(--white-color));
-    width: 220px;
-
+  background: transparent;
+  border: 1px solid rgba(var(--white-color));
+  width: 220px;
 }
 
 header .search img {
-    width: 15px;
-    position: absolute;
-    left: 200px;
-    top: 5px;
+  width: 15px;
+  position: absolute;
+  left: 200px;
+  top: 5px;
 }
-
 
 .git-img i {
-    font-size: 2rem;
-}
-
-.git-img i:hover,
-#notification:hover {
-    cursor: pointer;
-    opacity: .7;
+  font-size: 2rem;
 }
 
 #notification {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 #alert {
-    width: 8px;
-    height: 8px;
-    background: var(--blue-color);
-    border-radius: 50px;
-    display: inline;
-    z-index: 10;
+  width: 8px;
+  height: 8px;
+  background: var(--blue-color);
+  border-radius: 50px;
+  display: inline;
+  z-index: 10;
 }
 
 header ul li {
-    padding: 0 6px;
+  padding: 0 6px;
 }
 
 .small-user {
-    width: 20px;
-    height: 20px;
-    background: rgba(var(--white-color));
-    border-radius: 50px;
-    display: inline-block;
-    margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background: rgba(var(--white-color));
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: 5px;
 }
 
 .user-icon,
 .dropdown {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 /* main nav */
 .main-nav {
-    padding: 20px 0 0;   
+  padding: 20px 0 0;
 }
 
 main hr {
-    border:1px solid rgba(225, 228, 232, .3);
+  border: 1px solid rgba(225, 228, 232, 0.3);
 }
 .main-nav nav {
-    width: 90%;
-    margin: auto;
-    overflow-x: auto;
+  width: 90%;
+  margin: auto;
+  overflow-x: auto;
 }
 
 nav .nav-item {
-    width: 450px;
-    margin: 0 auto;
+  width: 450px;
+  margin: 0 auto;
 }
 
 ul li {
-    list-style: none;
-    display: inline-block;
-    font-size: .857rem;
-    font-weight: 600;
-    padding: 8px 12px;
-    cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  font-size: 0.857rem;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
 }
 
 ul li:hover {
-    opacity: .7;
+  opacity: 0.7;
 }
 
 ul li#active:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 nav li {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 nav li img {
-    border-radius: 0;
-    width: 16px;
-    height: 14px;
-    margin-bottom: -2px;
-    display: none;
+  border-radius: 0;
+  width: 16px;
+  height: 14px;
+  margin-bottom: -2px;
+  display: none;
 }
 
 nav .nav-item li#active {
-    border-bottom: 1px solid red;
-    font-weight: 600;
+  border-bottom: 1px solid red;
+  font-weight: 600;
 }
 
 li#active span {
-    font-size: 10px;
-    font-weight: 400;;
-    padding: 2px 6px;
-    border-radius: 10px;
-    margin-left: 3px;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 3px;
 }
 
 .user {
-    padding: 20px 0;
-    justify-content: flex-start;
-    gap: 10px;
+  padding: 20px 0;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 #user-img {
-    border: 1px solid var(--light-grey);
-    border-radius: 100%;
-    width: 20%;
-    z-index: 1;
+  border: 1px solid var(--light-grey);
+  border-radius: 100%;
+  width: 20%;
+  z-index: 1;
 }
 
 /* form */
 form {
-    border-bottom: 1px solid var(--light-grey);
-    padding-bottom: 10px;
-    padding-top: 20px;
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 
 input {
-    background: transparent;   
-    border: 1px solid var(--light-grey);
-    border-radius: 5px;
-    font-size: .857rem;   
-    
-    padding: 4px 12px;
-    width: 95%;
+  background: transparent;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  font-size: 0.857rem;
+
+  padding: 5px 12px;
+  width: 100%;
 }
 
 form input {
-    outline-color: var(--blue-color);
+  outline-color: var(--blue-color);
 }
 
 /* user-found */
 .user-found .container.flex {
-    align-items: flex-start;
-    flex-direction: column;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.user-details, .repositories {
-    width: 90%;
-    margin: 0 auto;
+.user-details,
+.repositories {
+  width: 90%;
+  margin: 0 auto;
 }
 
-/*User details*/ 
+/*User details*/
 .user-details #user-name {
-    font-size: 1.786rem;
-    color: var(--dark-color)
-} 
+  font-size: 1.786rem;
+  color: var(--dark-color);
+}
 
 .user-details #user-login {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .user-details #user-bio {
-    font-size: 1rem;
-    margin-top: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .github-repo {
-    padding: 18px 0;
-    border-bottom: 1px solid var(--light-grey);
+  padding: 18px 0;
+  border-bottom: 1px solid var(--light-grey);
 }
 
 /* repo details */
 .repo.flex {
-    flex-wrap: nowrap;
-    width: 100%;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
 .repo .repo-details {
-    max-width: 60%;
+  max-width: 60%;
 }
 .repo .star-repo {
-    max-width: 30%;
+  max-width: 30%;
 }
 
 .repo .star-repo button {
-    padding: 2px 6px;
-    border-radius: 5px;
-    font-size: .857rem;
-    background: #fafbfc;
-    border: 1px solid var(--light-grey);
-    color: var(--dark-color);
-    cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 5px;
+  font-size: 0.857rem;
+  background: #fafbfc;
+  border: 1px solid var(--light-grey);
+  color: var(--dark-color);
+  cursor: pointer;
 }
 
 .language-count {
-    margin: 10px 0;
-    width: fit-content;
-    max-width: 60%;
+  margin: 10px 0;
+  width: fit-content;
+  max-width: 60%;
 }
 
 .language-count span {
-    font-size: .857rem;
-    margin-right: 10px;
-    padding: 5px 0;
+  font-size: 0.857rem;
+  margin-right: 10px;
+  padding: 5px 0;
 }
 
 .language-count span i {
-    color: var(--dark-color);
-    cursor: pointer;
+  color: var(--dark-color);
+  cursor: pointer;
 }
 
 #repo-link {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 #repo-link a {
-    font-size: 1.2rem;
-    color: inherit;
-    text-decoration: none;
+  font-size: 1.2rem;
+  color: inherit;
+  text-decoration: none;
 }
+
 #repo-link:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 #repo-description {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #repo-lang-color {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 1px solid rgba(var(--white-color));
-    border-radius: 50%;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(var(--white-color));
+  border-radius: 50%;
 }
 
-@media(max-width: 767px) {
-    #bar {
-        font-size: 1.6rem;
-    }
+@media (max-width: 767px) {
+  #bar {
+    font-size: 1.6rem;
+  }
 
-    header .container.flex {
-        width: 100%;
-        position: relative;
-    }
+  header .container.flex {
+    width: 100%;
+    position: relative;
+  }
 
-    header .flex-item {
-        width: 33%;
-    }
+  header .flex-item {
+    width: 33%;
+  }
 
-    header ul.center-nav-item {
-        padding: 15px 0 0;
-    }
-    header ul li {
-        width: 100%;
-        padding: 10px 5px;
-        border-bottom: 1px solid rgba(var(--white-color));
-    }
+  header ul.center-nav-item {
+    padding: 15px 0 0;
+  }
+  header ul li {
+    width: 100%;
+    padding: 10px 5px;
+    border-bottom: 1px solid rgba(var(--white-color));
+  }
 
-    header .search {
-        margin-top: 15px;   
-    }
+  header .search {
+    margin-top: 15px;
+  }
 
-    header .search img {
-        left: 90%;
-    }
+  header .search img {
+    left: 90%;
+  }
 
-    .center-nav,
-    .left-nav {
-        display: none; 
-    }
+  .center-nav,
+  .left-nav {
+    display: none;
+  }
 
-    .dropdown.flex {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 7px;
-    }
+  .dropdown.flex {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 7px;
+  }
 
-    .dropdown .fa-sort-down,
-    .dropdown #plus {
-        display: none;
-    }
+  .dropdown .fa-sort-down,
+  .dropdown #plus {
+    display: none;
+  }
 
-    header .search #search-bar {
-        width: 100%;
-    }
+  header .search #search-bar {
+    width: 100%;
+  }
 
-    #notification {
-        position: absolute;
-        top: 15px;
-        left: 92%;
-        overflow-x: hidden;
-        width: auto;
-    }
+  #notification {
+    position: absolute;
+    top: 15px;
+    left: 92%;
+    overflow-x: hidden;
+    width: auto;
+  }
 
-    #alert {
-        position: absolute;
-        top: 12px;
-        right: 4%;
-    }
+  #alert {
+    position: absolute;
+    top: 12px;
+    right: 4%;
+    /* margin-right: 15px; */
+  }
 
-    .header-nav {
-        width: 65%;
-    }
+  .header-nav {
+    width: 65%;
+  }
 
-    .block-display {
-        display: block;
-    }
+  .block-display {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
+  #bar,
+  .hide-display {
+    display: none;
+  }
 
-    #bar, 
-    .hide-display {
-        display: none;
-    }
+  header {
+    position: relative;
+  }
 
-    header {
-        position: relative;
-    }
+  header .search {
+    padding-top: 0;
+    margin-left: 10px;
+  }
 
-    header .search {
-        padding-top: 0;
-        margin-left: 10px;
-    }
+  .center-nav,
+  .left-nav {
+    display: flex;
+  }
 
-    .center-nav,
-    .left-nav {
-        display: flex; 
-    }
+  #notification,
+  #alert {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+  }
 
-    #notification, 
-    #alert {
-        position: absolute;
-        right: 100px;
-        top: 15px;
-    }
+  #alert {
+    top: 12px;
+  }
 
-    #alert {
-        top: 12px;
-    }
+  .left-nav {
+    order: 2;
+  }
 
-    .left-nav {
-        order: 2;    
-    }
+  .main-nav nav {
+    width: 60%;
+    margin: auto;
+  }
 
-    .main-nav nav {
-        width: 60%;
-        margin: auto;
-    }
+  nav .nav-item {
+    max-width: 450px;
+  }
+  nav li img {
+    display: inline-block;
+  }
 
-    nav .nav-item {
-        max-width: 450px;
-    }
-    nav li img {
-        display: inline-block;
-    }
+  .user-found .container.flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .user-found .container.flex {
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  .user-found .user-details {
+    width: 20%;
+    margin-top: -40px;
+  }
 
-    .user-found .user-details {
-        width: 20%;
-        margin-top: -40px;
-    }
+  .user {
+    padding: 0;
+  }
 
-    .user {
-        padding: 0;
-    }
+  .user-found .repositories {
+    width: 65%;
+  }
 
-    .user-found .repositories {
-        width: 65%;
-    }
+  #user-img {
+    width: 260px;
+    height: 100%;
+  }
 
-    #user-img {
-        width: 260px;
-        height: 100%;
-    }
-
-    .language-count {
-        max-width: 300px;
-    }
+  .language-count {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 812px) {
-    header {
-        padding: 12px 22px;
-    }
+  header {
+    padding: 12px 22px;
+  }
 }
