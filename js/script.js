@@ -1,4 +1,4 @@
-let myToken = config.ACCESS_TOKEN;
+// Token is handled by Netlify function
 let userInput = document.querySelector("#username");
 let repositories = document.querySelector(".repositories-list");
 let repoSpan = document.querySelector("#active span");
@@ -23,15 +23,13 @@ const insertUserDetails = (user) => {
 const getGithubData = async () => {
   repositories.innerHTML = `<div style="width: 200px; height: 200px; margin: 20px auto;"><img src="https://res.cloudinary.com/adenike/image/upload/v1622295294/octocat-spinner_zjxedw.gif" alt="github icon spinner"> </div>`;
 
-  let api = "https://api.github.com/graphql";
+  // Use Netlify function instead of direct API call
+  let api = "/.netlify/functions/github-proxy";
   username = userInput.value;
   try {
     let resp = await axios({
       method: "POST",
       url: `${api}`,
-      headers: {
-        Authorization: `Bearer ${myToken}`,
-      },
       data: {
         query: `
                     query getRepository {
@@ -71,9 +69,8 @@ const getGithubData = async () => {
       userInput.value = "";
       let userRepo = user.repositories;
       let userRepoNodes = user.repositories.nodes;
-      document.querySelector(
-        ".small-user"
-      ).innerHTML = `<img src="${user.avatarUrl}" alt="user picture icon"><span class="header-login hide-display">${user.login}</span>`;
+      document.querySelector(".small-user").innerHTML =
+        `<img src="${user.avatarUrl}" alt="user picture icon"><span class="header-login hide-display">${user.login}</span>`;
       userDetails.innerHTML = insertUserDetails(user);
       repositories.innerHTML = insertRepoData(userRepoNodes);
 
