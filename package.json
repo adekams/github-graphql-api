@@ -1,0 +1,8 @@
+{
+  "name": "github-graphql-api",
+  "version": "1.0.0",
+  "description": "GitHub profile fetch using GitHub API and GraphQL",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
